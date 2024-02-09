@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="{{ meta.mainLanguage }}">
+    <head>
+        <title>Abierto</title>
+        <link href="/styles/digital-garden-base.css" rel="stylesheet">
+        {%-if meta.themeStyle%}
+            <link href="/styles/obsidian-base.css" rel="stylesheet">
+    	    <link href="{{meta.themeStyle}}" rel="stylesheet">
+        {% else %}
+            <link href="/styles/style.css" rel="stylesheet">
+        {%endif%}
+
+        <link href="/styles/custom-style.css" rel="stylesheet">
+        
+    </head>
+    <body class="theme-{{meta.baseTheme}} markdown-preview-view">
+        <div class="content centered">
+
+            {%-if not meta.themeStyle%}
+                <div class="font-bg"> &#128214; </div>
+            {%endif%}
+            <h1>Abierto</h1>
+            <p>Página "callback" para pruebas de autenticiación.</p>
+            <a href="/">Go back home</a>
+        </div>
+    </body>
+</html>
