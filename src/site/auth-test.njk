@@ -31,7 +31,7 @@ async function init() {
 	auth0Client = await createAuth0Client({
 		domain: "dev-0e677ns445hgsklw.us.auth0.com",
 		client_id: "DKUkyoJ1cpDgVBWiACsUvumrD4IKdU1K",
-		redirect_uri: window.location.origin,
+		redirect_uri: window.location.origin + "/callback",
 	});
 
 	// handle coming back from login
