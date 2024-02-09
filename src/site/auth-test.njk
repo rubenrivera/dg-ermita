@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Simple Demo is Simple</title>
+	<style>
+	</style>
+
+</head>
+<body>
+
+<h1>Simple Demo is Simple</h1>
+
+<button id="login" style="display:none">Login</button>
+<button id="logout" style="display:none">Logout</button>
+<div id="profile" style="display:none"></div>
+
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
+<script>
+
+let loginBtn, logoutBtn, profileDiv;
+let auth0Client;
+
+document.addEventListener('DOMContentLoaded', init, false);
+
+async function init() {
+	loginBtn = document.querySelector('#login');
+	logoutBtn = document.querySelector('#logout');
+	profileDiv = document.querySelector('#profile');
+
+	auth0Client = await createAuth0Client({
+		domain: "dev-0e677ns445hgsklw.us.auth0.com",
+		client_id: "DKUkyoJ1cpDgVBWiACsUvumrD4IKdU1K",
+		redirect_uri: window.location.origin,
+	});
+
+	// handle coming back from login
+	if (location.search.includes("state=") && 
+		(location.search.includes("code=") || 
+		location.search.includes("error="))) {
+		await auth0Client.handleRedirectCallback();
+		window.history.replaceState({}, document.title, "/");
+	}
+
+	const isAuthenticated = await auth0Client.isAuthenticated();
+	console.log('isAuthenticated', isAuthenticated);
+
+	if(!isAuthenticated) loginBtn.style.display = '';
+	else {
+		logoutBtn.style.display = null; 
+		const userProfile = await auth0Client.getUser();
+		profileDiv.innerHTML = `<h2>Profile</h2><pre>${JSON.stringify(userProfile,null,'\t')}</pre></div>.<p><img src="${userProfile.picture}" /></p>`;
+		profileDiv.style.display = '';
+	}
+
+	loginBtn.addEventListener("click", e => {
+		e.preventDefault();
+		auth0Client.loginWithRedirect();
+	});
+
+	logoutBtn.addEventListener("click", e => {
+		e.preventDefault();
+		auth0Client.logout();
+	});
+
+}
+</script>
+</body>
+</html>
