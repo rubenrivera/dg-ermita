@@ -21,64 +21,64 @@
                 <div class="font-bg"> &#128706;<!-- Passport Control--> </div>
             {%endif%}
             
-	    <h1>Prueba de autenticación</h1>
-	    <p>Prueba de autenticación por medio de Auth0 usando Stack Overflow OAuth.</p>
-	    <button id="login" style="display:none">Login</button>
-	    <button id="logout" style="display:none">Logout</button>
-	    <div id="profile" style="display:none"></div>
+			<h1>Prueba de autenticación</h1>
+			<p>Prueba de autenticación por medio de Auth0 usando Stack Overflow OAuth.</p>
+			<button id="login" style="display:none">Login</button>
+			<button id="logout" style="display:none">Logout</button>
+			<div id="profile" style="display:none"></div>
 
-            <a href="/">Volver a inicio</a>
+            <p></p><a href="/">Volver a inicio</a></p>
         </div>
   
-<script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
-<script>
+		<script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
+		<script>
 
-let loginBtn, logoutBtn, profileDiv;
-let auth0Client;
+			let loginBtn, logoutBtn, profileDiv;
+			let auth0Client;
 
-document.addEventListener('DOMContentLoaded', init, false);
+			document.addEventListener('DOMContentLoaded', init, false);
 
-async function init() {
-	loginBtn = document.querySelector('#login');
-	logoutBtn = document.queryselector('#logout');
-	profileDiv = document.querySelector('#profile');
+			async function init() {
+				loginBtn = document.querySelector('#login');
+				logoutBtn = document.querySelector('#logout');
+				profileDiv = document.querySelector('#profile');
 
-	auth0Client = await createAuth0Client({
-		domain: "dev-0e677ns445hgsklw.us.auth0.com",
-		client_id: "PDxAakKg6Ppof4Oy1NXRzVOQu8CtVFSn",
-		redirect_uri: window.location.origin,
-	});
+				auth0Client = await createAuth0Client({
+					domain: "dev-0e677ns445hgsklw.us.auth0.com",
+					client_id: "PDxAakKg6Ppof4Oy1NXRzVOQu8CtVFSn",
+					redirect_uri: window.location.origin,
+				});
 
-	// handle coming back from login
-	if (location.search.includes("state=") && 
-		(location.search.includes("code=") || 
-		location.search.includes("error="))) {
-		await auth0Client.handleRedirectCallback();
-		window.history.replaceState({}, document.title, "/");
-	}
+				// handle coming back from login
+				if (location.search.includes("state=") && 
+					(location.search.includes("code=") || 
+					location.search.includes("error="))) {
+					await auth0Client.handleRedirectCallback();
+					window.history.replaceState({}, document.title, "/");
+				}
 
-	const isAuthenticated = await auth0Client.isAuthenticated();
-	console.log('isAuthenticated', isAuthenticated);
+				const isAuthenticated = await auth0Client.isAuthenticated();
+				console.log('isAuthenticated', isAuthenticated);
 
-	if(!isAuthenticated) loginBtn.style.display = '';
-	else {
-		logoutBtn.style.display = null; 
-		const userProfile = await auth0Client.getUser();
-		profileDiv.innerHTML = `<h2>Profile</h2><pre>${JSON.stringify(userProfile,null,'\t')}</pre></div>.<p><img src="${userProfile.picture}" /></p>`;
-		profileDiv.style.display = '';
-	}
+				if(!isAuthenticated) loginBtn.style.display = '';
+				else {
+					logoutBtn.style.display = null; 
+					const userProfile = await auth0Client.getUser();
+					profileDiv.innerHTML = `<h2>Profile</h2><pre>${JSON.stringify(userProfile,null,'\t')}</pre></div>.<p><img src="${userProfile.picture}" /></p>`;
+					profileDiv.style.display = '';
+				}
 
-	loginBtn.addEventListener("click", e => {
-		e.preventDefault();
-		auth0Client.loginWithRedirect();
-	});
+				loginBtn.addEventListener("click", e => {
+					e.preventDefault();
+					auth0Client.loginWithRedirect();
+				});
 
-	logoutBtn.addEventListener("click", e => {
-		e.preventDefault();
-		auth0Client.logout();
-	});
+				logoutBtn.addEventListener("click", e => {
+					e.preventDefault();
+					auth0Client.logout();
+				});
 
-}
-</script>
-</body>
+			}
+		</script>
+	</body>
 </html>
