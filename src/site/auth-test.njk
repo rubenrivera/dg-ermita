@@ -2,7 +2,7 @@
 <!-- Adaptación de código publicadoe en https://www.raymondcamden.com/2022/07/11/using-auth0-login-with-javascript-some-tips -->
 <html lang="{{ meta.mainLanguage }}">
     <head>
-        <title>Abierto</title>
+        <title>Prueba de Autenticación</title>
         <link href="/styles/digital-garden-base.css" rel="stylesheet">
         {%-if meta.themeStyle%}
             <link href="/styles/obsidian-base.css" rel="stylesheet">
@@ -30,7 +30,7 @@
             <a href="/">Volver a inicio</a>
         </div>
   
-<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
 <script>
 
 let loginBtn, logoutBtn, profileDiv;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', init, false);
 
 async function init() {
 	loginBtn = document.querySelector('#login');
-	logoutBtn = document.querySelector('#logout');
+	logoutBtn = Document.Queryselector('#logout');
 	profileDiv = document.querySelector('#profile');
 
 	auth0Client = await createAuth0Client({
