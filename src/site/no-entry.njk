@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="{{ meta.mainLanguage }}">
+    <head>
+        <title>Acceso No Autorizado</title>
+        <link href="/styles/digital-garden-base.css" rel="stylesheet">
+        {%-if meta.themeStyle%}
+            <link href="/styles/obsidian-base.css" rel="stylesheet">
+    	    <link href="{{meta.themeStyle}}" rel="stylesheet">
+        {% else %}
+            <link href="/styles/style.css" rel="stylesheet">
+        {%endif%}
+
+        <link href="/styles/custom-style.css" rel="stylesheet">
+        
+    </head>
+    <body class="theme-{{meta.baseTheme}} markdown-preview-view">
+        <div class="content centered">
+
+            {%-if not meta.themeStyle%}
+                <div class="font-bg"> &#9940; </div>
+            {%endif%}
+            <h1>Acceso No Autorizado</h1>
+            <p>El acceso no fue autorizado.</p>
+            <a href="/">Volver a inicio</a>
+        </div>
+    </body>
+</html>
