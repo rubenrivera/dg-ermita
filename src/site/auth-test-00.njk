@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!-- Adaptación de código publicado en https://www.raymondcamden.com/2022/07/11/using-auth0-login-with-javascript-some-tips 
-En este archivo, se reemplazó el JavaScript por ejemplo JS SDK de Stack Exchange API.
--->
 <html lang="{{ meta.mainLanguage }}">
     <head>
         <title>Prueba de Autenticación</title>
@@ -24,55 +21,26 @@ En este archivo, se reemplazó el JavaScript por ejemplo JS SDK de Stack Exchang
             {%endif%}
             
 			<h1>Prueba de autenticación</h1>
-			<p>Prueba de autenticación por medio de Auth0 usando Stack Overflow OAuth.</p>
-			<button id="login" style="display:block">Login</button>
-			<button id="logout" style="display:none">Logout</button>
-			<div id="profile" style="display:none"></div>
-
+			<p>Prueba de autenticación por medio de Auth0 usando Stack Overflow OAuth, basado en https://auth0.com/docs/quickstart/spa/vanillajs/01-login#initialize-the-sdk</p>
+			<div class="hidden" id="gated-content">
+			    <p>
+			      You're seeing this content because you're currently
+			      <strong>logged in</strong>.
+			    </p>
+			    <label>
+			      Access token:
+			      <pre id="ipt-access-token"></pre>
+			    </label>
+			    <label>
+			      User profile:
+			      <pre id="ipt-user-profile"></pre>
+			    </label>
+		 	</div>
             <p></p><a href="/">Volver a inicio</a></p>
         </div>
   
-		<script type='text/javascript'>
-            // For simplicity, we're using jQuery for some things
-            //   However, the library has no jQuery dependency
-            $(function(){
-            // Initialize library
-            SE.init({ 
-                // Parameters obtained by registering an app, these are specific to the SE
-                //   documentation site
-                clientId: 26767, 
-                key: 'yfjOqeugQQsSTDhGhhwRkQ((', 
-                // Used for cross domain communication, it will be validated
-                channelUrl: 'https://api.stackexchange.com/docs/proxy',
-                // Called when all initialization is finished
-                complete: function(data) { 
-                    $('#login-button')
-                        .removeAttr('disabled')
-                        .text('Run Example With Version '+data.version); 
-                }
-            });
-            
-            // Attach click handler to login button
-            $('#login').click(function() {
-            
-                // Make the authentication call, note that being in an onclick handler
-                //   is important; most browsers will hide windows opened without a
-                //   'click blessing'
-                SE.authenticate({
-                    success: function(data) { 
-                        alert(
-                            'User Authorized with account id = ' + 
-                            data.networkUsers[0].account_id + ', got access token = ' + 
-                            data.accessToken
-                        ); 
-                    },
-                    error: function(data) { 
-                        alert('An error occurred:\n' + data.errorName + '\n' + data.errorMessage); 
-                    },
-                    networkUsers: true
-                });
-            });
-            });
-        </script>
-	</body>
+	<script type='text/javascript'>
+    
+	</script>
+    </body>
 </html>
