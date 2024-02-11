@@ -40,6 +40,7 @@ const logout = async () => {
   }
 };
 
+
 /**
  * Retrieves the auth configuration from the server
  */
