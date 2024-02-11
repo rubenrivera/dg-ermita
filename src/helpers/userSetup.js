@@ -5,8 +5,8 @@ function userMarkdownSetup(md) {
 function userEleventySetup(eleventyConfig) {
   // The eleventyConfig parameter stands for the the config instantiated in /.eleventy.js.
   // Feel free to add any plugin you want here instead of /.eleventy.js
-
-  const app = require('src/site/server');
+  // const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
+  const app = require('./src/helpers/auth/server');
   const port = process.env.PORT || 3000;
   app.listen(port, () => console.log(`Server running on port ${port}`));
 
