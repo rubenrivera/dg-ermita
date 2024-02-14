@@ -48,7 +48,6 @@ Log out</a>
 <div id="main-content" class="container mt-5 flex-grow-1">
 <div id="content-home" class="page">
 <div class="text-center hero">
-<img class="mb-3 app-logo"	src="/images/logo.png" alt="JavaScript logo"  width="75"/>
 <h1 class="mb-4">JavaScript Sample Project</h1>
 <p class="lead">This is a sample application that demonstrates an authentication flow for an SPA, using plain JavaScript</p>
 </div>
