@@ -4,7 +4,6 @@
 
 <div id="app" class="h-100 d-flex flex-column">
 <div class="nav-container">
-<nav class="navbar navbar-expand-md navbar-light bg-light">
 <div class="container">
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"	aria-controls="navbarNav"	  aria-expanded="false"	 aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -18,15 +17,12 @@
 <!-- Fullsize dropdown: show if authenticated -->
 <a class="nav-link dropdown-toggle" href="#" id="profileDropDown"	data-toggle="dropdown" >
 <!-- Profile image should be set to the profile picture from the id token -->
-<img alt="Profile picture" class="nav-user-profile profile-image rounded-circle"	 width="50" />
-</a>
+<img alt="Profile picture" class="nav-user-profile profile-image rounded-circle"	 width="50" /></a>
 <div class="dropdown-menu">
 <!-- Show the user's full name from the id token here -->
 <div class="dropdown-header nav-user-name user-name"></div>
-<a href="/profile" class="dropdown-item dropdown-profile route-link">
-Profile</a>
-<a href="#" class="dropdown-item"	 id="qsLogoutBtn"  onclick="logout()">
-Log out</a>
+<a href="/profile" class="dropdown-item dropdown-profile route-link">Profile</a>
+<a href="#" class="dropdown-item"	 id="qsLogoutBtn"  onclick="logout()">Log out</a>
 </div>
 <!-- /Fullsize dropdown -->
 <!-- Responsive login button: show if NOT authenticated -->
@@ -43,7 +39,6 @@ Log out</a>
 <a href="#" id="qsLogoutBtn" onclick="logout()">Log out</a>
 </div>
 </div>
-</nav>
 </div>
 <div id="main-content" class="container mt-5 flex-grow-1">
 <div id="content-home" class="page">
