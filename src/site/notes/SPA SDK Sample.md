@@ -76,11 +76,6 @@ Log out</a>
 <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
 <script>
 // URL mapping, from hash to a function that responds to that URL action
 const router = {
@@ -178,13 +173,6 @@ window.onpopstate = (e) => {
   }
 };
 </script>
-
-</div></div>
-
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
 
 <script>
 // The Auth0 client, initialized in configureClient()
@@ -321,8 +309,6 @@ window.onload = async () => {
 };
 
 </script>
-
-</div></div>
 
 
 
