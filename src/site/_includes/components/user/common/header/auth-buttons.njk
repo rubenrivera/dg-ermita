@@ -1,7 +1,5 @@
-<!-- Buttons -->
-<!-- Login button: show if NOT authenticated -->
-<button id="qsLoginBtn" onclick="login()" class="auth-invisible hidden">Log in</button>
-<button id="qsLogoutBtn" onclick="logout()" class="auth-visible hidden">Log out</button>
+{# Archivo para mostrar en todas las páginas, si no está autenticado el botón Login #}
+{# y si lo está el botón Log out y los datos esenciales de perfil de usuario #}
 
 <div class="auth-visible hidden">
 <!-- Profile image should be set to the profile picture from the id token -->
@@ -20,7 +18,7 @@
 <!-- Responsive profile dropdown: show if authenticated -->
 <span class="user-info">
 <!-- Profile image should be set to the profile picture from the id token -->
-<img  alt="Profile picture"	class="profile-image"  width="50"/>
+<img  alt="Profile picture"	class="profile-image" width="50"/>
 <!-- Show the user's full name from the id token here -->
 <h6 class="user-name"></h6>
 </span>
