@@ -1,3 +1,33 @@
 <!-- Buttons -->
+<!-- Login button: show if NOT authenticated -->
 <button id="qsLoginBtn" onclick="login()" class="auth-invisible hidden">Log in</button>
 <button id="qsLogoutBtn" onclick="logout()" class="auth-visible hidden">Log out</button>
+
+<div class="auth-visible hidden">
+<!-- Profile image should be set to the profile picture from the id token -->
+<img alt="Profile picture" class="nav-user-profile profile-image rounded-circle"width="50" />
+
+<!-- Show the user's full name from the id token here -->
+<div class="user-name"></div>
+<a href="/profile" class="route-link"><i class="fas fa-user"></i> Profile</a>
+<button	id="qsLogoutBtn" onclick="logout()"><i class="fas fa-power-off"></i> Log out</button>
+</div>
+<!-- Responsive login button: show if NOT authenticated -->
+<div class="auth-invisible">
+<button class="auth-invisible hidden" id="qsLoginBtn" onclick="login()">Log in</button>
+</div>
+<!-- /Responsive login button -->
+<!-- Responsive profile dropdown: show if authenticated -->
+<span class="user-info">
+<!-- Profile image should be set to the profile picture from the id token -->
+<img  alt="Profile picture"	class="profile-image"  width="50"/>
+<!-- Show the user's full name from the id token here -->
+<h6 class="user-name"></h6>
+</span>
+<span>
+<i class="fas fa-user mr-3"></i>
+<a href="/profile" class="route-link">Profile</a>
+</span>
+<button id="qsLogoutBtn" onclick="logout()"><i class="fas fa-power-off mr-3"></i>Log out</button>
+
+
