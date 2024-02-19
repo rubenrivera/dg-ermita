@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","title":"Inicio (Prueba)","tags":["gardenEntry"],"created":"2024-02-18T11:34:37.674-06:00","updated":"2024-02-18T22:15:24.625-06:00"}
+{"dg-publish":true,"permalink":"/index/","title":"Inicio (Prueba)","tags":["gardenEntry"],"created":"2024-02-18T11:34:37.674-06:00","updated":"2024-02-18T22:22:32.067-06:00"}
 ---
 
 
@@ -15,5 +15,6 @@
 <p class="user_id"></p>
 <p class="user_type"></p>
 <pre><code id="profile-data" class="json"></code></pre>
+<button id="qsLogoutBtn-bottom" onclick="logout()">Log out</button>
 </div>
 </div>
