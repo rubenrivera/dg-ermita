@@ -49,7 +49,7 @@ const isRouteLink = (element) =>
  * @param {*} id The id of the content to show
  */
 const showContent = (id) => {
-  eachElement(".page", (p) => p.classList.add("hidden"));
+  eachElement(".page", (p) => p?.classList.add("hidden"));
   document.getElementById(id)?.classList.remove("hidden");
 };
 
