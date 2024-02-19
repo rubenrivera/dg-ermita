@@ -76,12 +76,12 @@ const updateUI = async () => {
       // eachElement(".user-email", (e) => (e.innerText = user.email));
       eachElement(".auth-invisible", (e) => e.classList.add("hidden"));
       eachElement(".auth-visible", (e) => e.classList.remove("hidden"));
-      eachElement(".display_name", (e) => (e.src = user.display_name"));
-      eachElement(".is_employee", (e) => (e.src = user.is_employee"));
-      eachElement(".link", (e) => (e.src = user.link"));
-      eachElement(".profile_image", (e) => (e.src = user.profile_image"));
-      eachElement(".user_id", (e) => (e.src = user.user_id"));
-      eachElement(".user_type", (e) => (e.src = user.user_type"));
+      eachElement(".display_name", (e) => (e.innerText = user.display_name));
+      eachElement(".is_employee", (e) => (e.innerText = user.is_employee));
+      eachElement(".link", (e) => (e.href = user.link));
+      eachElement(".profile_image", (e) => (e.src = user.profile_image));
+      eachElement(".user_id", (e) => (e.innerText = user.user_id));
+      eachElement(".user_type", (e) => (e.innerText = user.user_type));
     } else {
       eachElement(".auth-invisible", (e) => e.classList.remove("hidden"));
       eachElement(".auth-visible", (e) => e.classList.add("hidden"));
