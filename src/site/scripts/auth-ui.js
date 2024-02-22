@@ -71,17 +71,17 @@ const updateUI = async () => {
 
       document.querySelectorAll("pre code").forEach(hljs.highlightBlock);
 
-      // eachElement(".profile-image", (e) => (e.src = user.picture));
+      eachElement(".profile-image", (e) => (e.src = user.picture));
       // eachElement(".user-name", (e) => (e.innerText = user.name));
       // eachElement(".user-email", (e) => (e.innerText = user.email));
       eachElement(".auth-invisible", (e) => e.classList.add("hidden"));
       eachElement(".auth-visible", (e) => e.classList.remove("hidden"));
-      eachElement(".display_name", (e) => (e.innerText = user.display_name));
-      eachElement(".is_employee", (e) => (e.innerText = user.is_employee));
-      eachElement(".link", (e) => (e.href = user.link));
-      eachElement(".profile_image", (e) => (e.src = user.profile_image));
-      eachElement(".user_id", (e) => (e.innerText = user.user_id));
-      eachElement(".user_type", (e) => (e.innerText = user.user_type));
+      eachElement(".display_name", (e) => (e.innerText = user.user_metadata.display_name));
+      eachElement(".is_employee", (e) => (e.innerText = user.user_metadata.is_employee));
+      eachElement(".link", (e) => (e.href = user.user_metadata.link));
+      //eachElement(".profile_image", (e) => (e.src = user.profile_image));
+      eachElement(".user_id", (e) => (e.innerText = user.user_metadata.user_id));
+      eachElement(".user_type", (e) => (e.innerText = user.user_metadata.user_type));
     } else {
       eachElement(".auth-invisible", (e) => e.classList.remove("hidden"));
       eachElement(".auth-visible", (e) => e.classList.add("hidden"));
