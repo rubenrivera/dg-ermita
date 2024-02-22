@@ -62,9 +62,12 @@ const updateUI = async () => {
 
     if (isAuthenticated) {
       const user = await auth0Client.getUser();
-
+      const claims = await auth0Client.getIdTokenClaims();
+        // if you need the raw id_token, you can access it
+        // using the __raw property
+        const id_token = claims.__raw;
       document.getElementById("profile-data").innerText = JSON.stringify(
-        user,
+         id_token,
         null,
         2
       );
