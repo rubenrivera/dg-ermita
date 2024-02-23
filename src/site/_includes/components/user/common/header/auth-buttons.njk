@@ -16,27 +16,26 @@
     margin-left: 15%;
   }
 </style>
-<div>
-  <!-- Login button: show if NOT authenticated -->
-  <section class="auth-invisible">
-    <button id="qsLoginBtn" onclick="login()">Log in</button>
-  </section>
-  <!-- /Login button -->
-  
-  <!-- Profile: show if authenticated -->
-  <section class="header-container auth-visible hidden">
-    <div class="left">
-      <span class="user-info">
-        <!-- Profile image should be set to the profile picture from the id token -->
-        <img alt="Profile picture"	class="profile-image" width="50"/>
-        <!-- Show the user's display name from the id token here -->
-        <h6 class="display_name"></h6>
-      </span> 
-    </div>
-    <div class="right">
-      <a href="/profile" class="route-link">Profile</a>
-      <button id="qsLogoutBtn" onclick="logout()">Log out</button>
-    </div>
-  </section>
-</div>
+<!-- Login button: show if NOT authenticated -->
+<section class="auth-invisible">
+  <button id="qsLoginBtn" onclick="login()">Log in</button>
+</section>
+<!-- /Login button -->
+
+<!-- Profile: show if authenticated -->
+<section class="header-container auth-visible hidden">
+  <div class="left">
+    <span class="user-info">
+      <!-- Profile image should be set to the profile picture from the id token -->
+      <img alt="Profile picture"	class="profile-image" width="50"/>
+      <!-- Show the user's display name from the id token here -->
+      <h6 class="display_name"></h6>
+    </span> 
+  </div>
+  <div class="right">
+    <a href="/profile" class="route-link">Profile</a>
+    <button id="qsLogoutBtn" onclick="logout()">Log out</button>
+  </div>
+</section>
+<div style="clear:both;"></div>
 
