@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"profile","permalink":"/profile/","title":"Perfil","contentClasses":"page","created":"2024-02-18T12:02:55.872-06:00","updated":"2024-02-23T11:24:09.076-06:00"}
+{"dg-publish":true,"dg-permalink":"profile","permalink":"/profile/","title":"Perfil","created":"2024-02-18T12:02:55.872-06:00","updated":"2024-02-23T12:35:48.209-06:00"}
 ---
 
 # Perfil del Usuario
