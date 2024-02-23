@@ -85,6 +85,10 @@ const updateUI = async () => {
       //eachElement(".profile_image", (e) => (e.src = user.profile_image));
       eachElement(".user_id", (e) => (e.innerText = user.user_metadata.user_id));
       eachElement(".user_type", (e) => (e.innerText = user.user_metadata.user_type));
+      
+      eachElement(".auth-invisible", (e) => e.classList.add("hidden"));
+      eachElement(".auth-visible", (e) => e.classList.remove("hidden"));
+      
     } else {
       eachElement(".auth-invisible", (e) => e.classList.remove("hidden"));
       eachElement(".auth-visible", (e) => e.classList.add("hidden"));
