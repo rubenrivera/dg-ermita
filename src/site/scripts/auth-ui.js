@@ -62,7 +62,7 @@ const updateUI = async () => {
 
     if (isAuthenticated) {
       const user = await auth0Client.getUser();
-      const namespace = 'https//so.ermita.rubenrivera.mx';
+      const namespace = 'https://so.ermita.rubenrivera.mx';
       const display_name = user[`${namespace}/display_name`];
       const is_employee = user[`${namespace}/is_employee`];
       const link = user[`${namespace}/link`];
