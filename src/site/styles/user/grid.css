@@ -24,4 +24,8 @@ aside {
 }
 footer {
     grid-area: footer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
