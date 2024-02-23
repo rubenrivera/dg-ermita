@@ -1,10 +1,12 @@
 ---
-{"dg-publish":true,"dg-path":"2024/01/20/inicio.md","permalink":"/2024/01/20/inicio/","hide":true,"tags":["gardenEntry"],"created":"2024-01-20T15:34:57.399-06:00","updated":"2024-02-23T11:23:04.333-06:00"}
+{"dg-publish":true,"dg-path":"2024/01/20/inicio.md","permalink":"/2024/01/20/inicio/","hide":true,"tags":["gardenEntry"],"created":"2024-01-20T15:34:57.399-06:00","updated":"2024-02-23T15:25:58.888-06:00"}
 ---
 
 # Bienvenido
 
 Para conocer de que trata esta iniciativa, consulta  el [[Inicial/Saber más/presentacion\|artículo de presentación]].
+
+Actualmente la sección de comentarios requiere de cuenta de GitHub. Para más detalles consulte la [[Cronología/2024/02_febrero/2024-02-11/ayuda\|Ayuda]].
 ## Espacios de Conversación
 
 ### Asíncronos
