@@ -63,11 +63,11 @@ const updateUI = async () => {
     if (isAuthenticated) {
       const user = await auth0Client.getUser();
       const namespace = 'https://so.ermita.rubenrivera.mx';
-      const display_name = user[`${namespace}/display_name`];
-      const is_employee = user[`${namespace}/is_employee`];
+      const display_name = user[`${namespace}/display_name`] ?? 'No disponible';
+      const is_employee = user[`${namespace}/is_employee`] ?? 'No disponible';
       const link = user[`${namespace}/link`];
-      const user_id = user[`${namespace}/user_id`];      
-      const user_type = user[`${namespace}/user_type`];
+      const user_id = user[`${namespace}/user_id`] ?? 'No disponible';      
+      const user_type = user[`${namespace}/user_type`] ?? 'No disponible';
       const profileData = document.getElementById("profile-data")
         if(profileData) profileData.innerText = JSON.stringify(
            user,
@@ -84,7 +84,11 @@ const updateUI = async () => {
       
       eachElement(".display_name", (e) => (e.innerText = display_name));
       eachElement(".is_employee", (e) => (e.innerText = is_employee));
-      eachElement(".link", (e) => (e.href = link);
+      if(link) {
+        eachElement(".link", (e) => (e.href = link);
+      } else {
+        eachElement(".link", (e) => e.classList.add("hidden"));
+      }
       eachElement(".user_id", (e) => (e.innerText = user_id));
       eachElement(".user_type", (e) => (e.innerText = user_type));
       
