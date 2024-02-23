@@ -78,8 +78,10 @@ const updateUI = async () => {
       document.querySelectorAll("pre code").forEach(hljs.highlightBlock);
 
       eachElement(".profile-image", (e) => (e.src = user.picture));
+      eachElement(".nickname", (e) => (e.innerText = user.nickname));
       // eachElement(".user-name", (e) => (e.innerText = user.name));
       // eachElement(".user-email", (e) => (e.innerText = user.email));
+      
       eachElement(".display_name", (e) => (e.innerText = display_name));
       eachElement(".is_employee", (e) => (e.innerText = is_employee));
       eachElement(".link", (e) => (e.href = link));
