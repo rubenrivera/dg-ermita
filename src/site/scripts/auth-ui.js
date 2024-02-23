@@ -85,7 +85,7 @@ const updateUI = async () => {
       eachElement(".display_name", (e) => (e.innerText = display_name));
       eachElement(".is_employee", (e) => (e.innerText = is_employee));
       if(link) {
-        eachElement(".link", (e) => (e.href = link);
+        eachElement(".link", (e) => (e.href = link));
       } else {
         eachElement(".link", (e) => e.classList.add("hidden"));
       }
