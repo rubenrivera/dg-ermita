@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"ayuda.md","permalink":"/ayuda/","title":"Ayuda de Hub de La Ermita de Rubén","tags":["ayuda"],"created":"2024-02-11T15:47:38.003-06:00","updated":"2024-02-23T11:17:28.550-06:00"}
+{"dg-publish":true,"dg-path":"ayuda.md","permalink":"/ayuda/","title":"Ayuda de Hub de La Ermita de Rubén","tags":["ayuda"],"created":"2024-02-11T15:47:38.003-06:00","updated":"2024-02-23T15:35:38.389-06:00"}
 ---
 
 # Ayuda
@@ -10,6 +10,14 @@ Las etiquetas predeterminadas están en inglés. Poco a poco iré modificando la
 	Todas las notas muestran el nombre del sitio en la parte superior el cual tiene un enlace a la [[Cronología/2024/02_febrero/2024-02-11/notes\|nota]] Inicio.
 - Buscar (Search)
 	Todas las notas muestran una caja de entrada de texto en la parte superior. Al hacer clic en este se muestra un [[diálogo modal\|diálogo modal]].
+### Secciones Generales
+#### Encabezado
+En la parte superior de cada [[Cronología/2024/02_febrero/2024-02-11/notes\|nota]] se muestra la sección de autenticación. Esta varía dependiendo de si el usuario ha iniciado sesión o no.
+- Anónimo
+	Se muestra el botón **Login**.
+- Usuario autenticado
+	Se muestra la foto, nombre del usuario, un enlace a su perfil y el botón **Logout**. Los usuarios autenticados pueden visualizar  en [[profile\|Perfil de Usuario]] los datos que se han almacenado.
+#### Pie de Página
 ### Notas
 ### Inicio
 Es un tipo especial de [[Cronología/2024/02_febrero/2024-02-11/notes\|nota]] que se muestra de forma predeterminada al acceder al sitio. 
