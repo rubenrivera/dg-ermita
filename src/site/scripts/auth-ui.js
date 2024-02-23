@@ -62,10 +62,12 @@ const updateUI = async () => {
 
     if (isAuthenticated) {
       const user = await auth0Client.getUser();
-      const claims = await auth0Client.getIdTokenClaims();
-        // if you need the raw id_token, you can access it
-        // using the __raw property
-        const id_token = claims.__raw;
+      const namespace = 'https//so.ermita.rubenrivera.mx';
+      const display_name = user[`${namespace}/display_name`];
+      const is_employee = user[`${namespace}/is_employee`];
+      const link = user[`${namespace}/link`];
+      const user_id = user[`${namespace}/user_id`];      
+      const user_type = user[`${namespace}/user_type`];
       document.getElementById("profile-data").innerText = JSON.stringify(
          user,
         null,
@@ -77,18 +79,14 @@ const updateUI = async () => {
       eachElement(".profile-image", (e) => (e.src = user.picture));
       // eachElement(".user-name", (e) => (e.innerText = user.name));
       // eachElement(".user-email", (e) => (e.innerText = user.email));
-      eachElement(".auth-invisible", (e) => e.classList.add("hidden"));
-      eachElement(".auth-visible", (e) => e.classList.remove("hidden"));
-      eachElement(".display_name", (e) => (e.innerText = user.user_metadata.display_name));
-      eachElement(".is_employee", (e) => (e.innerText = user.user_metadata.is_employee));
+      eachElement(".display_name", (e) => (e.innerText = display_name));
+      eachElement(".is_employee", (e) => (e.innerText = is_employee));
       eachElement(".link", (e) => (e.href = user.user_metadata.link));
-      //eachElement(".profile_image", (e) => (e.src = user.profile_image));
-      eachElement(".user_id", (e) => (e.innerText = user.user_metadata.user_id));
-      eachElement(".user_type", (e) => (e.innerText = user.user_metadata.user_type));
+      eachElement(".user_id", (e) => (e.innerText = user_id));
+      eachElement(".user_type", (e) => (e.innerText = user_type));
       
       eachElement(".auth-invisible", (e) => e.classList.add("hidden"));
       eachElement(".auth-visible", (e) => e.classList.remove("hidden"));
-      
     } else {
       eachElement(".auth-invisible", (e) => e.classList.remove("hidden"));
       eachElement(".auth-visible", (e) => e.classList.add("hidden"));
