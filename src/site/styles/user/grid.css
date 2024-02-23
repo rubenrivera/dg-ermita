@@ -16,7 +16,7 @@ nav {
 main {
     grid-area: main;
 }
-aside {
+sidebar-container {
     grid-area: aside;
 }
 footer {
