@@ -84,7 +84,7 @@ const updateUI = async () => {
       
       eachElement(".display_name", (e) => (e.innerText = display_name));
       eachElement(".is_employee", (e) => (e.innerText = is_employee));
-      eachElement(".link", (e) => (e.href = link; e.classList.remove("hidden"));
+      eachElement(".link", (e) => (e.href = link);
       eachElement(".user_id", (e) => (e.innerText = user_id));
       eachElement(".user_type", (e) => (e.innerText = user_type));
       
