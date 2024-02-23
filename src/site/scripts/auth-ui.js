@@ -68,11 +68,12 @@ const updateUI = async () => {
       const link = user[`${namespace}/link`];
       const user_id = user[`${namespace}/user_id`];      
       const user_type = user[`${namespace}/user_type`];
-      document.getElementById("profile-data").innerText = JSON.stringify(
-         user,
-        null,
-        2
-      );
+      const profileData = document.getElementById("profile-data")
+        if(profileData) profileData.innerText = JSON.stringify(
+           user,
+          null,
+          2
+        );
 
       document.querySelectorAll("pre code").forEach(hljs.highlightBlock);
 
