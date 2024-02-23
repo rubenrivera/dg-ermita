@@ -23,15 +23,14 @@
 <!-- /Login button -->
 
 <!-- Profile: show if authenticated -->
-<section class="header-container auth-visible hidden">
-  
-    <span class="user-info left">
-        <!-- Profile image should be set to the profile picture from the id token -->
-        <img alt="Profile picture" class="profile-image" width="50"/>
-        <!-- Show the user's display name from the id token here -->
-        <span class="display_name" style="font-size:larger; font-weight: bold;"></span>
-       </div>
-      <div class="right">
+<section class="header-container auth-visible hidden">  
+  <div class="user-info left">
+    <!-- Profile image should be set to the profile picture from the id token -->
+    <img alt="Profile picture" class="profile-image" width="50"/>
+    <!-- Show the user's display name from the id token here -->
+    <span class="display_name" style="font-size:larger; font-weight: bold;"></span>
+  </div>
+  <div class="right">
     <a href="/profile" class="route-link">Profile</a>&emsp;
     <button id="qsLogoutBtn" onclick="logout()">Log out</button>
   </div>
