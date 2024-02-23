@@ -101,6 +101,9 @@ const updateUI = async () => {
 
 window.onpopstate = (e) => {
   if (e.state && e.state.url && router[e.state.url]) {
-    showContentFromUrl(e.state.url);
+    if(showContentFromUrl(e.state.url)){
+      eachElement(".auth-invisible", (e) => e.classList.remove("hidden"));
+      eachElement(".auth-visible", (e) => e.classList.add("hidden"));
+    }
   }
 };
