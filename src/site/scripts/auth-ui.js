@@ -67,7 +67,7 @@ const updateUI = async () => {
         // using the __raw property
         const id_token = claims.__raw;
       document.getElementById("profile-data").innerText = JSON.stringify(
-         id_token,
+         user,
         null,
         2
       );
