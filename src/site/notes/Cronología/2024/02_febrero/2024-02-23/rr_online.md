@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cronologia/2024/02-febrero/2024-02-23/rr-online/","title":"Rubén Rivera Online","created":"2024-02-23T12:38:39.867-06:00","updated":"2024-02-23T12:40:22.978-06:00"}
+{"dg-publish":true,"permalink":"/cronologia/2024/02-febrero/2024-02-23/rr-online/","title":"Rubén Rivera Online","tags":["término","ayuda"],"created":"2024-02-23T12:38:39.867-06:00","updated":"2024-02-23T12:47:29.726-06:00"}
 ---
 
 # Rubén Rivera Online
