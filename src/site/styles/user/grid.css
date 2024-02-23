@@ -16,8 +16,11 @@ nav {
 main {
     grid-area: main;
 }
-sidebar-container {
+aside {
     grid-area: aside;
+}
+.sidebar {
+    display: block;
 }
 footer {
     grid-area: footer;
