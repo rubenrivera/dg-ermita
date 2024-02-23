@@ -1,6 +1,25 @@
 {# Archivo para mostrar en todas las páginas, si no está autenticado el botón Login #}
 {# y si lo está el botón Log out y los datos esenciales de perfil de usuario #}
-
+<style>
+  .header-container {
+    width: 80%;
+    height: 200px;
+    background: aqua;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .left {
+    width: 15%;
+    height: 200px;
+    float: left;
+  }
+  
+  .right {
+    margin-left: 15%;
+    height: 200px;
+  }
+</style>
 <!-- Login button: show if NOT authenticated -->
 <div class="auth-invisible">
   <button class="auth-invisible hidden" id="qsLoginBtn" onclick="login()">Log in</button>
@@ -8,15 +27,19 @@
 <!-- /Login button -->
 
 <!-- Profile: show if authenticated -->
-<div class="auth-visible hidden">
-  <span class="user-info">
-    <!-- Profile image should be set to the profile picture from the id token -->
-    <img alt="Profile picture"	class="profile-image" width="50"/>
-    <!-- Show the user's display name from the id token here -->
-    <h6 class="display_name"></h6>
-  </span>  
-  <a href="/profile" class="route-link">Profile</a>
-  <button id="qsLogoutBtn" onclick="logout()">Log out</button>
-</div>
+<section class="header-container auth-visible hidden">
+  <div class="left">
+    <span class="user-info">
+      <!-- Profile image should be set to the profile picture from the id token -->
+      <img alt="Profile picture"	class="profile-image" width="50"/>
+      <!-- Show the user's display name from the id token here -->
+      <h6 class="display_name"></h6>
+    </span> 
+  </div>
+  <div class="right">
+    <a href="/profile" class="route-link">Profile</a>
+    <button id="qsLogoutBtn" onclick="logout()">Log out</button>
+  </div>
+</section>
 
 
