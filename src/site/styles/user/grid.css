@@ -3,6 +3,7 @@ html, body {
     height: 100%;
 }
 body {
+    min-height: 100vh;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
