@@ -81,7 +81,7 @@ const updateUI = async () => {
       // eachElement(".user-email", (e) => (e.innerText = user.email));
       eachElement(".display_name", (e) => (e.innerText = display_name));
       eachElement(".is_employee", (e) => (e.innerText = is_employee));
-      eachElement(".link", (e) => (e.href = user.user_metadata.link));
+      eachElement(".link", (e) => (e.href = link));
       eachElement(".user_id", (e) => (e.innerText = user_id));
       eachElement(".user_type", (e) => (e.innerText = user_type));
       
