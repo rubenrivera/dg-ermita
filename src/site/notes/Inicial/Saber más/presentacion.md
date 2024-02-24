@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"dg-path":"2024/01/20/presentacion.md","permalink":"/2024/01/20/presentacion/","title":"Presentación","created":"2024-01-20T15:51:48.109-06:00","updated":"2024-02-23T11:36:58.015-06:00"}
+{"dg-publish":true,"dg-path":"2024/01/20/presentacion.md","permalink":"/2024/01/20/presentacion/","title":"Presentación","created":"2024-01-20T15:51:48.109-06:00","updated":"2024-02-23T18:13:23.398-06:00"}
 ---
-
-![](https://media.licdn.com/dms/image/D4E12AQE5aFOK2zgojQ/article-cover_image-shrink_720_1280/0/1705769064266?e=1710979200&v=beta&t=LZGHZaY0wueNYrii6yDIDkuxqPBcD9jPzRl-iayeMvA)
 
 # La Ermita de Rubén
 Publicado originalmente en [LinkedIn](https://www.linkedin.com/pulse/la-ermita-de-rub%2525C3%2525A9n-rub%2525C3%2525A9n-vicente-rivera-flores-l7dae%3FtrackingId=JWPRd2JoRx6%252Byuu2aP%252BK%252BQ%253D%253D/?trackingId=JWPRd2JoRx6%2Byuu2aP%2BK%2BQ%3D%3D) El 20 de enero de 2024.
+
+![](https://media.licdn.com/dms/image/D4E12AQE5aFOK2zgojQ/article-cover_image-shrink_720_1280/0/1705769064266?e=1710979200&v=beta&t=LZGHZaY0wueNYrii6yDIDkuxqPBcD9jPzRl-iayeMvA)
 
 En breve, "La Ermita de Rubén" es el nombre de un grupo de espacios digitales de conversación entre amigos, generalmente uno a uno o en grupos pequeños. Hay espacios de mensajes instantáneos de texto, de llamadas de voz y de videollamadas. Algunos de estos espacios estan soportados por servicios digitales de los grandes de Internet como Google y Facebook, otros por servicios digitales de nicho como Stack Exchange y Discord. Próximamente estaré enviando invitaciones personalizadas para conversar.
 
