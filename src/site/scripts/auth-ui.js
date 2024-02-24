@@ -28,7 +28,6 @@ const showContentFromUrl = (url) => {
     router[url]();
     return true;
   }
-  updateUI();
   return false;
 };
 
