@@ -3,6 +3,11 @@ html, body {
 }
 aside {
     display: inline-block;
-    min-height: 350px;
+    min-height: 500px;
+    text-align: center;
+}
+footer {
+    display: inline-block;
+    min-height: 500px;
     text-align: center;
 }
