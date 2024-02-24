@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"ayuda.md","permalink":"/ayuda/","title":"Ayuda de Hub de La Ermita de Rubén","tags":["ayuda"],"created":"2024-02-11T15:47:38.003-06:00","updated":"2024-02-23T15:35:38.389-06:00"}
+{"dg-publish":true,"dg-path":"ayuda.md","permalink":"/ayuda/","title":"Ayuda de Hub de La Ermita de Rubén","tags":["ayuda"],"created":"2024-02-11T15:47:38.003-06:00","updated":"2024-02-23T18:17:59.960-06:00"}
 ---
 
 # Ayuda
@@ -18,6 +18,7 @@ En la parte superior de cada [[Cronología/2024/02_febrero/2024-02-11/notes\|not
 - Usuario autenticado
 	Se muestra la foto, nombre del usuario, un enlace a su perfil y el botón **Logout**. Los usuarios autenticados pueden visualizar  en [[profile\|Perfil de Usuario]] los datos que se han almacenado.
 #### Pie de Página
+ El pie de página incluye enlaces a [[privacidad\|Política de Privacidad]], los [[terminos\|Términos y Condiciones del Servicio]] y a la [[Cronología/2024/02_febrero/2024-02-11/ayuda\|Ayuda]] (esta página).
 ### Notas
 ### Inicio
 Es un tipo especial de [[Cronología/2024/02_febrero/2024-02-11/notes\|nota]] que se muestra de forma predeterminada al acceder al sitio. 
