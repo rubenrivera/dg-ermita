@@ -17,7 +17,7 @@ const login = async (targetUrl) => {
     if (targetUrl) {
       options.appState = { targetUrl };
     } else {
-      options.appState = { window.location.href }
+      options.appState = window.location.href;
     }
 
     await auth0Client.loginWithRedirect(options);
