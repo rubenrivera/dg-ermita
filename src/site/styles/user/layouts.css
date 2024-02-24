@@ -2,12 +2,12 @@ html, body {
     height: 100%;
 }
 aside {
-    display: inline-block;
+    display: block;
     min-height: 500px;
     text-align: center;
 }
 footer {
-    display: inline-block;
+    display: block;
     min-height: 500px;
     text-align: center;
 }
