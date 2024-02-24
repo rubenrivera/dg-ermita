@@ -4,7 +4,7 @@ let auth0Client = null;
 /**
  * Starts the authentication flow
  */
-const login = async (targetUrl = window.location.href) => {
+const login = async (targetUrl) => {
   try {
     console.log("Logging in", targetUrl);
 
